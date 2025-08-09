@@ -15,7 +15,7 @@ A simple and clean to-do list application built with React. This project demonst
 
 1.  **Clone the repository:**
     ```
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/prem-ramamoorthy/TODO_list_using_react.git
     ```
 2.  **Install dependencies:**
     ```
