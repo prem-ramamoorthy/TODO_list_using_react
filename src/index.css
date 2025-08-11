@@ -1,43 +1,43 @@
-*{
-    padding : 0; 
-    margin : 0 ;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-#root{
+#root {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main{
+.main {
     background-color: rgb(235, 235, 235);
-    max-width:max-content;
+    max-width: max-content;
     padding: 10px;
     padding-left: 20px;
     border-radius: 20px;
     margin-top: 8px;
     min-height: 110%;
-    box-shadow: 5px 5px 5px 5px rgb(145, 142, 142) ;
+    box-shadow: 5px 5px 5px 5px rgb(145, 142, 142);
 }
 
-ul{
-    display: flex ;
+ul {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap : 6px; 
+    gap: 6px;
     margin: 10px;
     text-align: center;
     font-size: 1.1rem;
 }
 
-li{
-    display: flex ;
+li {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap : 10px ;
-    border-left: 3px solid ;
+    gap: 10px;
+    border-left: 3px solid;
     border-radius: 10px;
     border-width: 3;
     height: 30px;
@@ -48,10 +48,10 @@ li{
 li div {
     margin-left: 20px;
     margin-right: 30px;
-    display: flex ;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap : 10px ; 
+    gap: 10px;
 }
 
 li div p:nth-child(1) {
@@ -60,10 +60,10 @@ li div p:nth-child(1) {
 
 li p {
     max-width: max-content;
-    white-space:unset;
+    white-space: unset;
 }
 
-.priority{
+.priority {
     min-width: 90px;
     min-height: 15px;
     border-radius: 20px;
@@ -78,7 +78,7 @@ li p {
     justify-content: space-between;
 }
 
-h1{
+h1 {
     margin-top: 10px;
 }
 
@@ -93,7 +93,7 @@ h1{
 
 .container0 button {
     font-size: 1.1rem;
-     max-width: 100px;
+    max-width: 100px;
 }
 
 .container0 select {
@@ -114,6 +114,47 @@ h1{
     max-width: 100px;
 }
 
-.remove li input{
+.remove li input {
     display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .container0 input {
+        font-size: 0.8rem;
+        border-radius: 20px;
+        padding: 6px;
+        font-style: italic;
+        background-color: rgb(243, 243, 244);
+        max-width: 90px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .main{
+        max-width: 350px;
+        margin-left: 10px;
+    }
+
+    .container1{
+        margin-left: -10px;
+    }
+
+    .priority{
+        display: none;
+    }
+
+    li{
+        font-size: 1rem;
+        white-space: nowrap;
+        margin-left: -10px !important;
+        padding-top: 6px !important;
+        gap : 0px ;
+        text-overflow: hidden;
+    }
+    li input {
+        margin-left: -10px;
+        margin-right: -8px;
+    }
 }
